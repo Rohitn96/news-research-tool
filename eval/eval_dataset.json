@@ -1,0 +1,19 @@
+{
+  "sources": [
+    "https://en.wikipedia.org/wiki/Nvidia"
+  ],
+  "samples": [
+    {
+      "question": "In what year was Nvidia founded?",
+      "ground_truth": "Nvidia was founded in 1993."
+    },
+    {
+      "question": "Who is the co-founder and CEO of Nvidia?",
+      "ground_truth": "Jensen Huang is the co-founder, president, and CEO of Nvidia."
+    },
+    {
+      "question": "What type of products is Nvidia best known for designing?",
+      "ground_truth": "Nvidia is best known for designing graphics processing units (GPUs), as well as system-on-chip units and AI hardware and software."
+    }
+  ]
+}

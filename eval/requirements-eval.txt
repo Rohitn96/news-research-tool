@@ -1,0 +1,5 @@
+# Install on top of the app's requirements.txt to run eval/eval.py.
+-r ../requirements.txt
+ragas>=0.2,<0.3
+pandas>=2.0
+datasets>=2.18

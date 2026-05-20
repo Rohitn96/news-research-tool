@@ -1,0 +1,14 @@
+# Secrets
+.env
+.streamlit/secrets.toml
+
+# Generated index / artifacts
+faiss_index/
+*.faiss
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
