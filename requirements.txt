@@ -11,4 +11,5 @@ beautifulsoup4>=4.12
 pypdf>=5.1
 tiktoken>=0.8
 python-dotenv>=1.0
-flashrank>=0.2.9
+# flashrank>=0.2.9   # optional cross-encoder reranker; pulls in onnxruntime
+#                    # (heavy). Re-enable if you have the RAM and want rerank.

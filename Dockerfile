@@ -13,8 +13,12 @@ COPY . .
 
 EXPOSE 8501
 
+# Railway/Render inject $PORT at runtime; fall back to 8501 locally.
 HEALTHCHECK --interval=30s --timeout=5s --retries=3 \
-    CMD curl --fail http://localhost:8501/_stcore/health || exit 1
+    CMD curl --fail http://localhost:${PORT:-8501}/_stcore/health || exit 1
 
-ENTRYPOINT ["streamlit", "run", "main.py", \
-    "--server.port=8501", "--server.address=0.0.0.0"]
+# Shell-form CMD so ${PORT} is expanded by the shell.
+CMD streamlit run main.py \
+    --server.port=${PORT:-8501} \
+    --server.address=0.0.0.0 \
+    --server.headless=true
