@@ -1,3 +1,14 @@
+---
+title: News Research Tool
+emoji: 📈
+colorFrom: blue
+colorTo: indigo
+sdk: streamlit
+app_file: main.py
+python_version: "3.12"
+pinned: false
+---
+
 # News Research Tool 📈
 
 A modern **retrieval-augmented generation (RAG)** app for asking questions about
